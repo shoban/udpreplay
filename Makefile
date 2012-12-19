@@ -2,7 +2,7 @@
 all: udpreplay udpplay
 
 clean:
-	rm -f *.o udpreplay
+	rm -f *.o udpreplay udpplay
 
 pcap.o: pcap.c pcap.h ip.h tcp.h udp.h
 
