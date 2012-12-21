@@ -10,6 +10,6 @@ udpreplay.o: udpreplay.c pcap.h
 
 udpreplay: udpreplay.o pcap.o
 
-udpplay: LDFLAGS += -lrt
-udpplay: udpplay.c
+udpplay: LDLIBS += -lrt
+udpplay: udpplay.o
 

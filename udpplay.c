@@ -95,7 +95,7 @@ void udpplay_rate(
     clock_gettime(CLOCK_MONOTONIC, &slt);
 end:
     freeaddrinfo(servinfo);
-    fprintf(stdout, "sent %u pkts, %u size in time %f secs.",
+    fprintf(stdout, "sent %u pkts, %u size in time %f secs.\n",
             no_pkts, no_pkts*pkt_size, ts_diff(&slt, &st));
 
     close(sockfd);
